@@ -1,0 +1,5 @@
+print("welcome to the world of programming")
+print(4)
+print("arqam \n") 
+print("hello world ",5) 
+print("this is the end of the world",end="*")
