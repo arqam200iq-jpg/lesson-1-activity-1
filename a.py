@@ -45,18 +45,40 @@ print("new type of number and active statuss",type(agent_number_text),type(is_ac
    a) Use slicing to get the first three letters of the name.
    b) Use negative indexing to get the last letter.
    c) Join both parts to create the code name.
+"""
+first_three=name[0:3]
+last_letter=name[-1:]
+code_name=first_three+last_letter
+print("first three letters of a name ",first_three)
+print("last letter of name",last_letter)
+print("secret code name",code_name)
 
+
+"""
 6) Reverse the gadget name.
    a) Use slicing with `[::-1]` to reverse the gadget text.
    b) Print the reversed gadget name.
+"""
+reversed_gadget=gadget[::-1]
+print("reversed gadget name",reversed_gadget)
 
+"""
 7) Build the badge message.
    a) Create separate lines for the agent badge.
    b) Use string concatenation to join text and variables.
    c) Use `.upper()` to make important badge text uppercase.
-
+"""
+badge_line1="AGENT"+code_name.upper()
+badge_line2="ID:" +agent_number_text
+badge_line4="SCEART GADGET CODE"+reversed_gadget.upper()
+"""
 8) Print the secret agent badge.
    a) Print a badge heading.
    b) Print all badge lines one by one.
    c) Print a closing line to complete the badge.
 """
+print("SECRET AGENT BADGE")
+print(badge_line1)
+print(badge_line2)
+
+print(badge_line4)
