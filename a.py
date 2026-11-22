@@ -1,84 +1,64 @@
 """
-1) Ask for agent details.
-   a) Ask the user to enter their real name.
-   b) Ask the user to enter their favourite gadget.
-   c) Store both inputs as text values.
-"""
-name=input("enter your real name,agent: ")
-gadget=input("enter your favourite gadget,agent: ")
-"""
-2) Store agent information.
-   a) Create variables for agent number, speed rating, mission count, height, and active status.
-   b) Use different data types such as integer, float, string, and Boolean.
-"""
-agent_number=7
-speed_rating=9.5
-mission_count=12
-height=1.65
-is_active=True
-"""
-3) Display each value and its data type.
-   a) Print the agent name and gadget.
-   b) Print number, rating, mission count, height, and active status.
-   c) Use `type()` to show the data type of each value.
-"""
-print("name=",name,"type=",type(name))
-print("gadget=",gadget,"type=",type(gadget))
-print("agent_number=",agent_number,"type=",type(agent_number))
-print("mission_count",mission_count,"type=",type(mission_count))
-print("speed_rating",speed_rating,"type=",type(speed_rating))
+1) Add the activity details.
+   a) Mention the activity name as "Farm Harvest Calculator".
+   b) Introduce the program as a harvest and earnings calculator.
 
-print("is_active",is_active,"type=",type(is_active))
-print("height=",height,"type=",type(height))
+2) Store harvest values.
+   a) Use the assignment operator `=` to store harvest from five fields.
+   b) Store each field's harvest in separate variables.
+"""
+field1=100
+field2=150
+field3=200
+field4=250
+field5=300
+total=field1+ field2+ field3+field4+field5
+average=total/5
+print("total per harvest",total)
+print("average per harvest",average)
+price=20
+earnings=price*total
+bags=total//25
+leftover=total%25
+total+=30
+print("total after bounes")
+total-=15
+print("total earnings",earnings)
+print("total bags",bags)
+print("left over",leftover)
+print("total after seed reserve",total)
+lastyear=500
+print("better last year",total >lastyear)
+print("same like last year",total ==lastyear)
+print("atleast better than last year",total >=lastyear)
+"""
+3) Use arithmetic operators.
+   a) Use `+` to calculate the total harvest.
+   b) Use `/` to calculate the average harvest per field.
+   c) Use `*` to calculate total earnings.
 
-"""
-4) Convert values into text.
-   a) Use `str()` to convert numbers into strings.
-   b) Convert the Boolean value into text.
-   c) Print the converted values and their new data types.
-"""
-agent_number_text=str(agent_number)
-is_active_text=str(is_active)
-print("new type of number and active statuss",type(agent_number_text),type(is_active_text))
-"""
-5) Create a secret code name.
-   a) Use slicing to get the first three letters of the name.
-   b) Use negative indexing to get the last letter.
-   c) Join both parts to create the code name.
-"""
-first_three=name[0:3]
-last_letter=name[-1:]
-code_name=first_three+last_letter
-print("first three letters of a name ",first_three)
-print("last letter of name",last_letter)
-print("secret code name",code_name)
+4) Display total, average, and earnings.
+   a) Print the total harvest in kilograms.
+   b) Print the average harvest per field.
+   c) Print the total earnings in rupees.
 
+5) Use floor division and modulus.
+   a) Use `//` to calculate the number of full 25 kg bags.
+   b) Use `%` to calculate the leftover grain.
+   c) Print the full bags and leftover amount.
 
-"""
-6) Reverse the gadget name.
-   a) Use slicing with `[::-1]` to reverse the gadget text.
-   b) Print the reversed gadget name.
-"""
-reversed_gadget=gadget[::-1]
-print("reversed gadget name",reversed_gadget)
+6) Use comparison operators.
+   a) Compare this year's harvest with last year's harvest.
+   b) Use `>` to check if this year is better.
+   c) Use `==` to check if both years are the same.
+   d) Use `>=` to check if this year is at least as good.
 
-"""
-7) Build the badge message.
-   a) Create separate lines for the agent badge.
-   b) Use string concatenation to join text and variables.
-   c) Use `.upper()` to make important badge text uppercase.
-"""
-badge_line1="AGENT"+code_name.upper()
-badge_line2="ID:" +agent_number_text
-badge_line4="SCEART GADGET CODE"+reversed_gadget.upper()
-"""
-8) Print the secret agent badge.
-   a) Print a badge heading.
-   b) Print all badge lines one by one.
-   c) Print a closing line to complete the badge.
-"""
-print("SECRET AGENT BADGE")
-print(badge_line1)
-print(badge_line2)
+7) Use assignment operators.
+   a) Use `+=` to add bonus crop to the total.
+   b) Use `-=` to subtract grain saved as seeds.
+   c) Print the updated harvest after each change.
 
-print(badge_line4)
+8) Calculate the final bag count.
+   a) Use floor division again after adjustments.
+   b) Print the final number of bags packed.
+"""
